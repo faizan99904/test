@@ -29,9 +29,8 @@ export class AppComponent implements OnInit {
   speakVoice() {
     const utterance = new SpeechSynthesisUtterance(this.inputVal);
     window.speechSynthesis.speak(utterance);
-    window.navigator.vibrate([200, 100, 200]);
   }
-  
+
   vibrate() {
     window.navigator.vibrate([200, 100, 200]);
   }
