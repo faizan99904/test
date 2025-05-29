@@ -1,0 +1,8 @@
+<div class="modal-wrapper" *ngIf="this.toggle.getModal()" (click)="isCloseModal()">
+    <div class="content" (click)="$event.stopPropagation()">
+        <div class="header">
+            <div>Modal</div>
+            <div style="cursor: pointer;" (click)="isCloseModal()">X</div>
+        </div>
+    </div>
+</div>
